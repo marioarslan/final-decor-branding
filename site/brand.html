@@ -1,0 +1,445 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr"
+      data-title-en="Final Decor — Identity System"
+      data-title-ar="فاينل ديكور — النظام البصري">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Final Decor — Identity System</title>
+<meta name="description" content="The brand identity system for Final Decor — interior design, Aleppo, Syria.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=IBM+Plex+Sans+Arabic:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="icon" href="assets/logo/mark-ink.svg">
+<link rel="stylesheet" href="assets/css/style.css">
+<style>
+  /* Page-local touches for the guidelines document */
+  .doc-hero { padding-top: clamp(24px,5vw,60px); }
+  .palette { display: grid; grid-template-columns: repeat(5, 1fr); gap: clamp(12px,1.6vw,24px); }
+  @media (max-width: 900px){ .palette { grid-template-columns: repeat(3, 1fr); } }
+  @media (max-width: 520px){ .palette { grid-template-columns: repeat(2, 1fr); } }
+  .swatch { border: var(--line); }
+  .swatch--accent { outline: 1px solid var(--terracotta); outline-offset: -1px; }
+  .swatch__chip { aspect-ratio: 16/10; }
+  .swatch__body { padding: 14px 16px 18px; border-top: var(--line); }
+  .swatch__name { font-family: var(--display); font-weight:500; font-size:18px; letter-spacing:var(--track-display); }
+  .swatch__hex { font-size:12px; letter-spacing:0.1em; color:var(--charcoal); text-transform:uppercase; margin-top:4px; }
+  .swatch__role { font-size:12px; color:var(--graphite); margin-top:10px; line-height:1.4; }
+  .specimen { border:var(--line); padding: clamp(20px,3vw,40px); }
+  .specimen__big { font-family:var(--display); font-weight:500; letter-spacing:var(--track-display); line-height:.9; font-size:clamp(48px,11vw,150px); }
+  .specimen__row { display:flex; align-items:baseline; gap:20px; padding-block:16px; border-top:var(--line); }
+  .specimen__row:first-of-type { border-top:0; }
+  .specimen__label { width:120px; flex:none; font-size:12px; letter-spacing:0.1em; text-transform:uppercase; color:var(--graphite); }
+  .type-table { width:100%; border-collapse:collapse; }
+  .type-table th, .type-table td { text-align:start; padding:14px 12px; border-bottom:var(--line); font-size:14px; }
+  .type-table th { font-size:12px; letter-spacing:0.12em; text-transform:uppercase; color:var(--graphite); font-weight:500; }
+  .type-table .sample { font-family:var(--display); font-weight:500; letter-spacing:var(--track-display); color:var(--ink); }
+  .spec-box { border:var(--line); padding:18px; }
+  .clearspace { position:relative; border:var(--line); padding:clamp(28px,5vw,56px); display:flex; align-items:center; justify-content:center; background:var(--paper-warm); }
+  .clearspace img { height:clamp(90px,14vw,170px); }
+  .dl { display:grid; grid-template-columns:auto 1fr; gap:10px 22px; font-size:14px; }
+  .dl dt { color:var(--graphite); }
+  .principle { border-top:var(--line); padding-top:20px; }
+  .principle h3 { margin-bottom:10px; }
+  .toc a { display:grid; grid-template-columns:44px 1fr auto; gap:16px; align-items:baseline; padding-block:16px; border-top:var(--line); transition:padding-inline .3s ease; }
+  .toc a:hover { padding-inline-start:10px; }
+  .toc a:last-child { border-bottom:var(--line); }
+  .toc__n { font-size:12px; letter-spacing:0.14em; color:var(--graphite); }
+  .toc__t { font-family:var(--display); font-weight:500; font-size:clamp(20px,2.4vw,30px); letter-spacing:var(--track-display); }
+  .dodont { display:grid; grid-template-columns:1fr 1fr; gap:clamp(24px,4vw,56px); }
+  @media (max-width:640px){ .dodont { grid-template-columns:1fr; } }
+  .dodont ul li { padding-block:12px; border-top:var(--line); font-size:14px; line-height:1.5; }
+  .badge-do, .badge-dont { font-family:var(--display); font-weight:500; letter-spacing:var(--track-display); font-size:22px; }
+</style>
+</head>
+<body>
+
+<!-- ================= HEADER ================= -->
+<header class="site-header">
+  <div class="wrap nav">
+    <a class="nav__brand" href="index.html" aria-label="Final Decor home">
+      <img src="assets/logo/mark-ink.svg" alt="Final Decor" style="height:34px">
+      <span class="display-m" style="font-size:19px" data-en="Final Decor" data-ar="فاينل ديكور">Final Decor</span>
+    </a>
+    <div class="nav__right">
+      <a class="link small" href="index.html" data-en="View website" data-ar="زيارة الموقع">View website</a>
+      <button class="lang-toggle" data-lang-toggle aria-label="Switch language">
+        <span data-code="en">EN</span><span class="sep">/</span><span data-code="ar">ع</span>
+      </button>
+    </div>
+  </div>
+</header>
+
+<!-- ================= COVER ================= -->
+<section class="wrap doc-hero">
+  <p class="eyebrow" data-reveal data-en="Identity System — 01" data-ar="النظام البصري — ٠١">Identity System — 01</p>
+  <h1 class="display-xl mt-m" data-reveal data-en="Final&nbsp;Decor" data-ar="فاينل ديكور">Final&nbsp;Decor</h1>
+  <div class="editorial mt-l" data-reveal>
+    <p class="lead" data-en="A visual identity for a residential interior design studio based in Aleppo, Syria — built on quiet, architectural restraint where photography of the work carries every chromatic decision."
+       data-ar="نظام بصري لاستوديو تصميم داخلي سكني مقره حلب، سوريا — يقوم على الانضباط المعماري الهادئ، حيث تحمل صور الأعمال كل قرار لوني.">
+      A visual identity for a residential interior design studio based in Aleppo, Syria — built on quiet, architectural restraint where photography of the work carries every chromatic decision.
+    </p>
+    <div>
+      <dl class="dl">
+        <dt data-en="Studio" data-ar="الاستوديو">Studio</dt><dd>Final Decor</dd>
+        <dt data-en="Discipline" data-ar="التخصص">Discipline</dt><dd data-en="Interior Design" data-ar="التصميم الداخلي">Interior Design</dd>
+        <dt data-en="Location" data-ar="الموقع">Location</dt><dd data-en="Aleppo, Syria" data-ar="حلب، سوريا">Aleppo, Syria</dd>
+        <dt data-en="Display type" data-ar="خط العناوين">Display type</dt><dd>Europa Grotesk SH</dd>
+        <dt data-en="Text type" data-ar="خط النص">Text type</dt><dd>Inter · IBM Plex Sans Arabic</dd>
+      </dl>
+    </div>
+  </div>
+</section>
+
+<section class="wrap section--tight" data-reveal>
+  <figure><img class="ratio-16x9 cover" src="assets/img/living-02.jpg" alt="Final Decor interior — modern living room in marble and warm wood"></figure>
+</section>
+
+<!-- ================= CONTENTS ================= -->
+<section class="wrap section--tight">
+  <div class="sec-head">
+    <span class="sec-head__num">00</span>
+    <h2 class="sec-head__title heading" data-en="Contents" data-ar="المحتويات">Contents</h2>
+  </div>
+  <nav class="toc">
+    <a href="#positioning"><span class="toc__n">01</span><span class="toc__t" data-en="Positioning" data-ar="التموضع">Positioning</span><span class="link small" data-en="Read" data-ar="اقرأ">Read</span></a>
+    <a href="#logo"><span class="toc__n">02</span><span class="toc__t" data-en="Logo &amp; Mark" data-ar="الشعار والرمز">Logo &amp; Mark</span><span class="link small" data-en="Read" data-ar="اقرأ">Read</span></a>
+    <a href="#colour"><span class="toc__n">03</span><span class="toc__t" data-en="Colour" data-ar="الألوان">Colour</span><span class="link small" data-en="Read" data-ar="اقرأ">Read</span></a>
+    <a href="#type"><span class="toc__n">04</span><span class="toc__t" data-en="Typography" data-ar="الطباعة">Typography</span><span class="link small" data-en="Read" data-ar="اقرأ">Read</span></a>
+    <a href="#grid"><span class="toc__n">05</span><span class="toc__t" data-en="Grid &amp; Space" data-ar="الشبكة والمسافات">Grid &amp; Space</span><span class="link small" data-en="Read" data-ar="اقرأ">Read</span></a>
+    <a href="#photography"><span class="toc__n">06</span><span class="toc__t" data-en="Photography" data-ar="التصوير">Photography</span><span class="link small" data-en="Read" data-ar="اقرأ">Read</span></a>
+    <a href="#components"><span class="toc__n">07</span><span class="toc__t" data-en="Components" data-ar="العناصر">Components</span><span class="link small" data-en="Read" data-ar="اقرأ">Read</span></a>
+    <a href="#voice"><span class="toc__n">08</span><span class="toc__t" data-en="Principles" data-ar="المبادئ">Principles</span><span class="link small" data-en="Read" data-ar="اقرأ">Read</span></a>
+  </nav>
+</section>
+
+<!-- ================= 01 POSITIONING ================= -->
+<section id="positioning" class="wrap section field-warm" style="padding-inline:var(--pad-x); margin-inline:0; max-width:none">
+  <div class="wrap" style="padding-inline:0">
+  <div class="sec-head">
+    <span class="sec-head__num">01</span>
+    <h2 class="sec-head__title heading" data-en="Positioning" data-ar="التموضع">Positioning</h2>
+  </div>
+  <div class="editorial" data-reveal>
+    <div>
+      <p class="display-m" data-en="We design rooms to be lived in — not photographed."
+         data-ar="نصمّم مساحات لتُعاش، لا لتُصوَّر فقط.">We design rooms to be lived in — not photographed.</p>
+    </div>
+    <div class="body body--muted">
+      <p data-en="Final Decor is a residential interior design studio. Our work is warm, modern and precise: backlit feature walls, layered cove lighting, honest wood and stone, and furniture arranged for real family life. The identity steps back so the spaces can speak."
+         data-ar="فاينل ديكور استوديو تصميم داخلي سكني. أعمالنا دافئة وعصرية ودقيقة: جدران مميزة بإضاءة خلفية، وإضاءة مخفية متدرجة، وخشب وحجر صادقان، وأثاث مرتّب لحياة عائلية حقيقية. تتراجع الهوية البصرية لتترك المساحة تتحدث.">
+        Final Decor is a residential interior design studio. Our work is warm, modern and precise: backlit feature walls, layered cove lighting, honest wood and stone, and furniture arranged for real family life. The identity steps back so the spaces can speak.</p>
+      <p class="mt-m" data-en="The system is deliberately monochrome. Black ink, paper white, two greys — and hairline rules instead of decoration. Every trace of colour on the page comes from the photography of the rooms themselves."
+         data-ar="النظام أحادي اللون عن قصد: حبر أسود، أبيض ورقي، ودرجتان من الرمادي — وخطوط رفيعة بدل الزخرفة. كل أثرٍ للون على الصفحة يأتي من صور الغرف نفسها.">
+        The system is deliberately monochrome. Black ink, paper white, two greys — and hairline rules instead of decoration. Every trace of colour on the page comes from the photography of the rooms themselves.</p>
+    </div>
+  </div>
+  <div class="grid grid-3 mt-l" data-reveal>
+    <div class="metric"><span class="metric__num">10+</span><span class="metric__label" data-en="Years of practice" data-ar="سنوات الخبرة">Years of practice</span></div>
+    <div class="metric"><span class="metric__num">120+</span><span class="metric__label" data-en="Spaces delivered" data-ar="مساحة منجزة">Spaces delivered</span></div>
+    <div class="metric"><span class="metric__num">1</span><span class="metric__label" data-en="Standard — considered" data-ar="معيار واحد — الإتقان">Standard — considered</span></div>
+  </div>
+  </div>
+</section>
+
+<!-- ================= 02 LOGO ================= -->
+<section id="logo" class="wrap section">
+  <div class="sec-head">
+    <span class="sec-head__num">02</span>
+    <h2 class="sec-head__title heading" data-en="Logo &amp; Mark" data-ar="الشعار والرمز">Logo &amp; Mark</h2>
+    <a class="link small" href="#colour" data-en="Next — Colour" data-ar="التالي — الألوان">Next — Colour</a>
+  </div>
+
+  <div class="grid grid-2" data-reveal>
+    <div class="clearspace">
+      <img src="assets/logo/final-decor-ink.svg" alt="Final Decor primary logo lockup">
+    </div>
+    <div>
+      <p class="eyebrow" data-en="The Mark" data-ar="الرمز">The Mark</p>
+      <p class="body mt-s" data-en="The symbol abstracts an architectural elevation — stepped towers rising from a single baseline, with punched openings that read as windows and light. It is drawn from straight edges only: no curves, no radius, echoing the structural clarity of the interiors."
+         data-ar="يجرّد الرمز واجهةً معمارية — أبراج متدرجة تنهض من خط أساس واحد، بفتحات تُقرأ كنوافذ وضوء. رُسم من حواف مستقيمة فقط: بلا منحنيات ولا زوايا مستديرة، ليعكس الوضوح الإنشائي للمساحات الداخلية.">
+        The symbol abstracts an architectural elevation — stepped towers rising from a single baseline, with punched openings that read as windows and light. It is drawn from straight edges only: no curves, no radius, echoing the structural clarity of the interiors.</p>
+      <p class="body body--muted mt-m" data-en="The primary lockup stacks the mark over the wordmark. The mark may stand alone as an app icon or stamp. Preserve clear space equal to the width of one tower on every side; never redraw, rotate, or add effects."
+         data-ar="يجمع الشعار الأساسي الرمز فوق الاسم. يمكن استخدام الرمز منفرداً كأيقونة أو ختم. احفظ مساحة خالية بعرض برجٍ واحد من كل جهة؛ لا تُعِد رسمه أو تُدوّره أو تُضِف إليه أي تأثيرات.">
+        The primary lockup stacks the mark over the wordmark. The mark may stand alone as an app icon or stamp. Preserve clear space equal to the width of one tower on every side; never redraw, rotate, or add effects.</p>
+    </div>
+  </div>
+
+  <div class="grid grid-3 mt-l" data-reveal>
+    <div class="spec-box center">
+      <div class="clearspace" style="border:0;padding:32px 0;background:none"><img src="assets/logo/mark-ink.svg" alt="Icon mark, ink" style="height:96px"></div>
+      <p class="mono-label mt-s" data-en="Icon — Ink on paper" data-ar="الرمز — حبر على ورق">Icon — Ink on paper</p>
+    </div>
+    <div class="spec-box center" style="background:var(--ink)">
+      <div style="padding:32px 0"><img src="assets/logo/mark-white.svg" alt="Icon mark, reversed" style="height:96px"></div>
+      <p class="mono-label mt-s" style="color:var(--paper)" data-en="Icon — Reversed" data-ar="الرمز — معكوس">Icon — Reversed</p>
+    </div>
+    <div class="spec-box center">
+      <div style="padding:44px 0"><img src="assets/logo/wordmark-ink.svg" alt="Final Decor wordmark" style="height:34px"></div>
+      <p class="mono-label mt-s" data-en="Wordmark" data-ar="الاسم المكتوب">Wordmark</p>
+    </div>
+  </div>
+</section>
+
+<!-- ================= 03 COLOUR ================= -->
+<section id="colour" class="wrap section field-warm" style="max-width:none;margin:0">
+  <div class="wrap" style="padding-inline:0">
+  <div class="sec-head">
+    <span class="sec-head__num">03</span>
+    <h2 class="sec-head__title heading" data-en="Colour" data-ar="الألوان">Colour</h2>
+    <a class="link small" href="#type" data-en="Next — Type" data-ar="التالي — الطباعة">Next — Type</a>
+  </div>
+  <p class="lead mb-l" data-reveal data-en="Four neutrals and a single warm accent. The rooms still provide most of the colour — Terracotta appears on roughly one-tenth of the surface: labels, numbers, arrows, active states and links."
+     data-ar="أربع درجات محايدة ولمسة دافئة واحدة. تبقى الغرف مصدر معظم اللون — يظهر التيراكوتا على نحو عُشر المساحة فقط: الوسوم والأرقام والأسهم والحالات النشطة والروابط.">Four neutrals and a single warm accent. The rooms still provide most of the colour — Terracotta appears on roughly one-tenth of the surface: labels, numbers, arrows, active states and links.</p>
+  <div class="palette" data-reveal>
+    <div class="swatch">
+      <div class="swatch__chip" style="background:#000000"></div>
+      <div class="swatch__body">
+        <div class="swatch__name">Ink Black</div><div class="swatch__hex">#000000</div>
+        <div class="swatch__role" data-en="Text, rules, mark, every hairline border." data-ar="النص، الخطوط، الرمز، وكل حد رفيع.">Text, rules, mark, every hairline border.</div>
+      </div>
+    </div>
+    <div class="swatch">
+      <div class="swatch__chip" style="background:#ffffff;border-bottom:var(--line)"></div>
+      <div class="swatch__body">
+        <div class="swatch__name">Paper White</div><div class="swatch__hex">#FFFFFF</div>
+        <div class="swatch__role" data-en="The single surface. Everything floats on it." data-ar="السطح الوحيد. كل شيء يطفو عليه.">The single surface. Everything floats on it.</div>
+      </div>
+    </div>
+    <div class="swatch">
+      <div class="swatch__chip" style="background:#333333"></div>
+      <div class="swatch__body">
+        <div class="swatch__name">Charcoal</div><div class="swatch__hex">#333333</div>
+        <div class="swatch__role" data-en="Secondary text and quiet labels." data-ar="النص الثانوي والوسوم الهادئة.">Secondary text and quiet labels.</div>
+      </div>
+    </div>
+    <div class="swatch">
+      <div class="swatch__chip" style="background:#979797"></div>
+      <div class="swatch__body">
+        <div class="swatch__name">Soft Graphite</div><div class="swatch__hex">#979797</div>
+        <div class="swatch__role" data-en="Captions, meta, faint dividers." data-ar="التعليقات والبيانات الوصفية والفواصل الخفيفة.">Captions, meta, faint dividers.</div>
+      </div>
+    </div>
+    <div class="swatch swatch--accent">
+      <div class="swatch__chip" style="background:var(--terracotta)"></div>
+      <div class="swatch__body">
+        <div class="swatch__name" style="color:var(--terracotta)">Terracotta</div><div class="swatch__hex">#B1542E</div>
+        <div class="swatch__role" data-en="The 10% accent — eyebrows, section numbers, arrows, link hovers, active filters, text selection. Never a large fill." data-ar="لمسة الـ١٠٪ — الوسوم وأرقام المقاطع والأسهم وتحويم الروابط والفلاتر النشطة وتحديد النص. لا تُستخدم كتعبئة كبيرة أبداً.">The 10% accent — eyebrows, section numbers, arrows, link hovers, active filters, text selection. Never a large fill.</div>
+      </div>
+    </div>
+  </div>
+  </div>
+</section>
+
+<!-- ================= 04 TYPOGRAPHY ================= -->
+<section id="type" class="wrap section">
+  <div class="sec-head">
+    <span class="sec-head__num">04</span>
+    <h2 class="sec-head__title heading" data-en="Typography" data-ar="الطباعة">Typography</h2>
+    <a class="link small" href="#grid" data-en="Next — Grid" data-ar="التالي — الشبكة">Next — Grid</a>
+  </div>
+
+  <!-- Display specimen -->
+  <div class="specimen" data-reveal>
+    <div class="flex between items-end" style="flex-wrap:wrap;gap:12px">
+      <p class="eyebrow">Europa Grotesk SH</p>
+      <p class="mono-label" data-en="Display &amp; Headlines" data-ar="العناوين">Display &amp; Headlines</p>
+    </div>
+    <div class="specimen__big mt-m ltr">AaBbCcDd<br>0123456789</div>
+    <div class="specimen__row"><span class="specimen__label">Aa · 500</span><span class="display-l ltr" style="font-weight:500">Architectural, warm, exact.</span></div>
+    <div class="specimen__row"><span class="specimen__label">Aa · 700</span><span class="display-l ltr" style="font-weight:700">Interiors that hold light.</span></div>
+    <p class="body body--muted mt-m" data-en="A neo-grotesque with an even, humanist rhythm. Used at medium (500) for most headlines and bold (700) only for emphasis. Open, even tracking (+0.01em) and generous size do the work — never let it shout."
+       data-ar="خط نيو-جروتيسك بإيقاع متزن وإنساني. يُستخدم بالوزن المتوسط (٥٠٠) لأغلب العناوين، والغامق (٧٠٠) للتأكيد فقط. التتبّع المتّزن والحجم الكبير هما ما يصنعان الأثر — دون صراخ.">
+      A neo-grotesque with an even, humanist rhythm. Used at medium (500) for most headlines and bold (700) only for emphasis. Open, even tracking (+0.01em) and generous size do the work — never let it shout.</p>
+  </div>
+
+  <!-- Body + Arabic specimens -->
+  <div class="grid grid-2 mt-l" data-reveal>
+    <div class="specimen">
+      <div class="flex between items-end"><p class="eyebrow">Inter</p><p class="mono-label" data-en="Latin text" data-ar="النص اللاتيني">Latin text</p></div>
+      <p class="ltr mt-m" style="font-family:var(--body);font-size:19px;line-height:1.5">The quiet luxury of a well-planned room is the way the light lands at seven in the evening.</p>
+      <p class="body body--muted mt-m ltr" style="font-family:'Inter'">Substituting the studio’s reference sans, Inter carries all running copy, navigation and captions at weights 400–500 with tight tracking.</p>
+    </div>
+    <div class="specimen">
+      <div class="flex between items-end"><p class="eyebrow">IBM Plex Sans Arabic</p><p class="mono-label" data-en="Arabic text" data-ar="النص العربي">Arabic text</p></div>
+      <p dir="rtl" style="font-family:var(--arabic);font-size:19px;line-height:1.7;margin-top:24px">الرفاهية الهادئة لغرفةٍ مدروسة هي الطريقة التي يسقط بها الضوء في السابعة مساءً.</p>
+      <p dir="rtl" class="body body--muted mt-m" style="font-family:var(--arabic)">خط عربي جروتيسك نظيف يوازن الحرف اللاتيني، ويحمل النص العربي في الموقع مع دعم كامل للاتجاه من اليمين إلى اليسار.</p>
+    </div>
+  </div>
+
+  <!-- Type scale -->
+  <div class="mt-l" data-reveal>
+    <table class="type-table">
+      <thead><tr>
+        <th data-en="Role" data-ar="الدور">Role</th>
+        <th data-en="Sample" data-ar="نموذج">Sample</th>
+        <th data-en="Family" data-ar="العائلة">Family</th>
+        <th data-en="Weight" data-ar="الوزن">Weight</th>
+        <th data-en="Tracking" data-ar="التتبّع">Tracking</th>
+      </tr></thead>
+      <tbody>
+        <tr><td>Display XL</td><td class="sample" style="font-size:34px">Final Decor</td><td>Europa Grotesk</td><td>500</td><td>+0.01em</td></tr>
+        <tr><td>Display</td><td class="sample" style="font-size:26px">Living Rooms</td><td>Europa Grotesk</td><td>500</td><td>+0.01em</td></tr>
+        <tr><td>Heading</td><td class="sample" style="font-size:21px">Feature Walls</td><td>Europa Grotesk</td><td>500</td><td>+0.01em</td></tr>
+        <tr><td>Lead</td><td style="font-family:var(--body);font-size:19px">Warm, modern interiors.</td><td>Inter</td><td>400</td><td>−0.011em</td></tr>
+        <tr><td>Body</td><td style="font-family:var(--body);font-size:16px">Running paragraph copy.</td><td>Inter</td><td>400</td><td>−0.011em</td></tr>
+        <tr><td>Caption</td><td style="font-family:var(--body);font-size:12px;letter-spacing:0.14em;text-transform:uppercase;color:var(--graphite)">Aleppo · Syria</td><td>Inter</td><td>500</td><td>0.14em</td></tr>
+      </tbody>
+    </table>
+  </div>
+</section>
+
+<!-- ================= 05 GRID & SPACE ================= -->
+<section id="grid" class="wrap section field-warm" style="max-width:none;margin:0">
+  <div class="wrap" style="padding-inline:0">
+  <div class="sec-head">
+    <span class="sec-head__num">05</span>
+    <h2 class="sec-head__title heading" data-en="Grid &amp; Space" data-ar="الشبكة والمسافات">Grid &amp; Space</h2>
+    <a class="link small" href="#photography" data-en="Next — Photography" data-ar="التالي — التصوير">Next — Photography</a>
+  </div>
+  <div class="editorial" data-reveal>
+    <p class="lead" data-en="An editorial two-column grid on a 1440px canvas. Sharp corners everywhere — 0px radius on images, cards, inputs and buttons. Depth comes from photography and whitespace, never from shadow."
+       data-ar="شبكة تحريرية من عمودين على مساحة ١٤٤٠ بكسل. زوايا حادة في كل مكان — نصف قطر صفر للصور والبطاقات والحقول والأزرار. العمق يأتي من التصوير والفراغ، لا من الظل.">An editorial two-column grid on a 1440px canvas. Sharp corners everywhere — 0px radius on images, cards, inputs and buttons. Depth comes from photography and whitespace, never from shadow.</p>
+    <div class="dl" style="align-content:start">
+      <dt data-en="Max width" data-ar="أقصى عرض">Max width</dt><dd>1440px</dd>
+      <dt data-en="Section gap" data-ar="فراغ المقاطع">Section gap</dt><dd>56 – 104px</dd>
+      <dt data-en="Element gap" data-ar="فراغ العناصر">Element gap</dt><dd>18 – 21px</dd>
+      <dt data-en="Radius" data-ar="نصف القطر">Radius</dt><dd>0px</dd>
+      <dt data-en="Rules" data-ar="الخطوط">Rules</dt><dd>1px solid #000</dd>
+      <dt data-en="Elevation" data-ar="الارتفاع">Elevation</dt><dd data-en="None" data-ar="لا يوجد">None</dd>
+    </div>
+  </div>
+  </div>
+</section>
+
+<!-- ================= 06 PHOTOGRAPHY ================= -->
+<section id="photography" class="wrap section">
+  <div class="sec-head">
+    <span class="sec-head__num">06</span>
+    <h2 class="sec-head__title heading" data-en="Photography" data-ar="التصوير">Photography</h2>
+    <a class="link small" href="projects.html" data-en="See all projects" data-ar="كل المشاريع">See all projects</a>
+  </div>
+  <p class="lead mb-l" data-reveal data-en="Photography is the entire visual language. Warm, naturally-lit interiors shot wide and environmental — the furniture shown in lived-in rooms, never on white. Full-bleed or column-width, 0px radius, no overlays."
+     data-ar="التصوير هو اللغة البصرية كاملةً. مساحات داخلية دافئة بإضاءة طبيعية، ملتقطة بزاوية واسعة وبيئية — الأثاث في غرفٍ معاشة، لا على خلفية بيضاء. صور ممتدة أو بعرض العمود، بلا زوايا مستديرة أو طبقات فوقية.">Photography is the entire visual language. Warm, naturally-lit interiors shot wide and environmental — the furniture shown in lived-in rooms, never on white. Full-bleed or column-width, 0px radius, no overlays.</p>
+  <div class="grid grid-3" data-reveal>
+    <figure><img class="ratio-4x3 cover" data-lightbox="assets/img/living-03.jpg" src="assets/img/living-03-t.jpg" alt="Warm living room with backlit feature wall"></figure>
+    <figure><img class="ratio-4x3 cover" data-lightbox="assets/img/detail-01.jpg" src="assets/img/detail-01-t.jpg" alt="Wood feature wall with lit niches"></figure>
+    <figure><img class="ratio-4x3 cover" data-lightbox="assets/img/garden-01.jpg" src="assets/img/garden-01-t.jpg" alt="Interior courtyard garden at golden hour"></figure>
+    <figure><img class="ratio-4x3 cover" data-lightbox="assets/img/lounge-01.jpg" src="assets/img/lounge-01-t.jpg" alt="Curved sofa lounge with garden view"></figure>
+    <figure><img class="ratio-4x3 cover" data-lightbox="assets/img/detail-02.jpg" src="assets/img/detail-02-t.jpg" alt="Wood slat wall with downlights"></figure>
+    <figure><img class="ratio-4x3 cover" data-lightbox="assets/img/bedroom-03.jpg" src="assets/img/bedroom-03-t.jpg" alt="Bedroom vanity with framed lighting"></figure>
+  </div>
+  <div class="dodont mt-l" data-reveal>
+    <div>
+      <p class="badge-do" data-en="Direct" data-ar="نعم">Direct</p>
+      <ul>
+        <li data-en="Shoot at dusk with the cove and accent lighting on." data-ar="صوّر عند الغسق مع تشغيل الإضاءة المخفية والمميزة.">Shoot at dusk with the cove and accent lighting on.</li>
+        <li data-en="Keep verticals straight and compositions wide." data-ar="حافظ على استقامة الخطوط الرأسية واتساع التكوين.">Keep verticals straight and compositions wide.</li>
+        <li data-en="Let warm woods and stone read naturally — no heavy filters." data-ar="اترك الخشب الدافئ والحجر بلونهما الطبيعي — بلا فلاتر ثقيلة.">Let warm woods and stone read naturally — no heavy filters.</li>
+      </ul>
+    </div>
+    <div>
+      <p class="badge-dont" data-en="Avoid" data-ar="تجنّب">Avoid</p>
+      <ul>
+        <li data-en="No text, badges or graphics laid over the photography." data-ar="لا نصوص أو شارات أو رسومات فوق الصور.">No text, badges or graphics laid over the photography.</li>
+        <li data-en="No duotone, no desaturation, no cool colour casts." data-ar="لا ثنائي اللون، ولا إزالة تشبّع، ولا صبغات باردة.">No duotone, no desaturation, no cool colour casts.</li>
+        <li data-en="No rounded corners or drop shadows on any image." data-ar="لا زوايا مستديرة ولا ظلال على أي صورة.">No rounded corners or drop shadows on any image.</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<!-- ================= 07 COMPONENTS ================= -->
+<section id="components" class="wrap section field-warm" style="max-width:none;margin:0">
+  <div class="wrap" style="padding-inline:0">
+  <div class="sec-head">
+    <span class="sec-head__num">07</span>
+    <h2 class="sec-head__title heading" data-en="Components" data-ar="العناصر">Components</h2>
+    <a class="link small" href="#voice" data-en="Next — Principles" data-ar="التالي — المبادئ">Next — Principles</a>
+  </div>
+  <div class="grid grid-2" data-reveal>
+    <div class="spec-box">
+      <p class="mono-label mb-m" data-en="Ghost links" data-ar="روابط شفافة">Ghost links</p>
+      <p><a class="link" href="#components" data-en="View the collection" data-ar="اطّلع على الأعمال">View the collection</a></p>
+      <p class="mt-m"><span class="link-arrow" data-en="Start a project" data-ar="ابدأ مشروعاً">Start a project</span> <span class="arw">→</span></p>
+    </div>
+    <div class="spec-box">
+      <p class="mono-label mb-m" data-en="Buttons — outline only" data-ar="أزرار — حدود فقط">Buttons — outline only</p>
+      <div class="flex gap-s" style="flex-wrap:wrap">
+        <button class="btn" data-en="Enquire" data-ar="استفسر">Enquire</button>
+        <button class="btn btn--inverse" data-en="Book a visit" data-ar="احجز زيارة">Book a visit</button>
+      </div>
+    </div>
+    <div class="spec-box">
+      <p class="mono-label mb-m" data-en="Project card" data-ar="بطاقة مشروع">Project card</p>
+      <a class="project" href="#components">
+        <div class="project__media"><img class="ratio-4x3 cover" src="assets/img/living-04-t.jpg" alt="Project sample"></div>
+        <div class="project__meta">
+          <span class="project__name" data-en="Halab Residence" data-ar="مسكن حلب">Halab Residence</span>
+          <span class="project__type" data-en="Living" data-ar="جلوس">Living</span>
+        </div>
+      </a>
+    </div>
+    <div class="spec-box">
+      <p class="mono-label mb-m" data-en="Input field" data-ar="حقل إدخال">Input field</p>
+      <label class="lbl" data-en="Email" data-ar="البريد الإلكتروني">Email</label>
+      <input class="field" type="email" data-en-ph="you@example.com" data-ar-ph="بريدك الإلكتروني" placeholder="you@example.com">
+      <div class="wrap-tags mt-m">
+        <span class="tag" data-en="Living" data-ar="جلوس">Living</span>
+        <span class="tag" data-en="Bedroom" data-ar="نوم">Bedroom</span>
+        <span class="tag" data-en="Kitchen" data-ar="مطبخ">Kitchen</span>
+      </div>
+    </div>
+  </div>
+  </div>
+</section>
+
+<!-- ================= 08 PRINCIPLES ================= -->
+<section id="voice" class="wrap section">
+  <div class="sec-head">
+    <span class="sec-head__num">08</span>
+    <h2 class="sec-head__title heading" data-en="Principles" data-ar="المبادئ">Principles</h2>
+  </div>
+  <div class="dodont" data-reveal>
+    <div>
+      <p class="badge-do mb-m" data-en="Do" data-ar="افعل">Do</p>
+      <ul>
+        <li data-en="Use hairline 1px black rules to divide — never boxes or fills." data-ar="استخدم خطوطاً سوداء رفيعة ١بكسل للفصل — لا صناديق أو تعبئة.">Use hairline 1px black rules to divide — never boxes or fills.</li>
+        <li data-en="Set Europa Grotesk at 500; reserve 700 for rare emphasis." data-ar="استخدم يوروبا جروتيسك بالوزن ٥٠٠؛ واحفظ ٧٠٠ لتأكيد نادر.">Set Europa Grotesk at 500; reserve 700 for rare emphasis.</li>
+        <li data-en="Let photography carry the colour; add Terracotta only as a ~10% accent." data-ar="اجعل التصوير يحمل اللون؛ وأضِف التيراكوتا كلمسة بنسبة ١٠٪ فقط.">Let photography carry the colour; add Terracotta only as a ~10% accent.</li>
+        <li data-en="Keep every corner sharp — 0px radius, always." data-ar="أبقِ كل زاوية حادة — نصف قطر صفر دائماً.">Keep every corner sharp — 0px radius, always.</li>
+      </ul>
+    </div>
+    <div>
+      <p class="badge-dont mb-m" data-en="Don’t" data-ar="لا تفعل">Don’t</p>
+      <ul>
+        <li data-en="Don’t add colour beyond the one Terracotta accent — no gradients or coloured fills." data-ar="لا تُضِف لوناً خارج لمسة التيراكوتا الواحدة — لا تدرّجات ولا تعبئة ملوّنة.">Don’t add colour beyond the one Terracotta accent — no gradients or coloured fills.</li>
+        <li data-en="Don’t use shadows, elevation or surface tinting." data-ar="لا تستخدم الظلال أو الارتفاع أو تلوين الأسطح.">Don’t use shadows, elevation or surface tinting.</li>
+        <li data-en="Don’t fill large areas with Terracotta — keep it to buttons, marks and small accents." data-ar="لا تملأ مساحات كبيرة بالتيراكوتا — احصره في الأزرار والعلامات واللمسات الصغيرة.">Don’t fill large areas with Terracotta — keep it to buttons, marks and small accents.</li>
+        <li data-en="Don’t place graphics or badges over photography." data-ar="لا تضع رسومات أو شارات فوق الصور.">Don’t place graphics or badges over photography.</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<!-- ================= FOOTER ================= -->
+<footer class="site-footer">
+  <div class="wrap">
+    <div class="flex between items-end" style="flex-wrap:wrap;gap:20px">
+      <div>
+        <img src="assets/logo/mark-ink.svg" alt="Final Decor" style="height:40px">
+        <p class="caption mt-s" data-en="Interior Design — Aleppo, Syria" data-ar="تصميم داخلي — حلب، سوريا">Interior Design — Aleppo, Syria</p>
+      </div>
+      <a class="btn" href="index.html" data-en="Enter the website →" data-ar="ادخل إلى الموقع ←">Enter the website →</a>
+    </div>
+    <div class="footer-word ltr" aria-hidden="true">Final Decor</div>
+    <div class="footer-bottom">
+      <p>© <span data-year></span> Final Decor</p>
+      <p data-en="Identity system — document 01" data-ar="النظام البصري — وثيقة ٠١">Identity system — document 01</p>
+    </div>
+  </div>
+</footer>
+
+<script src="assets/js/main.js"></script>
+</body>
+</html>
