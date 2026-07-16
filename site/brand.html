@@ -143,7 +143,11 @@
     [data-reveal] { opacity:1 !important; transform:none !important; }
     section[id] { page-break-before:always; }
     .site-footer { page-break-before:always; }
-    .grid-2, .grid-3, .dodont, .palette, .editorial { grid-template-columns:1fr !important; }
+    /* Text-heavy blocks read better full-width in print; small card/visual
+       grids (palette, logo variants, photography, mockups) keep their
+       natural multi-column layout — forcing those to 1fr stacked pages
+       of near-empty whitespace between sections. */
+    .editorial, .dodont { grid-template-columns:1fr !important; }
     .spec-box, .swatch, .specimen, .app-item, .social-frame, .carousel-card, .banner, .biz-card, .site-sign, .ig-grid, figure {
       break-inside:avoid; page-break-inside:avoid;
     }
